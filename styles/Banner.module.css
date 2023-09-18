@@ -1,0 +1,29 @@
+.banner {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--thm-black);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.homeBanner {
+  background-image: url(/images/main-slider/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
