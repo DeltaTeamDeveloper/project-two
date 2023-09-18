@@ -1,7 +1,7 @@
 import Head from 'next/head'
 // import components
-import Homebanner from '../../components/Banner'
-import Contact from '../../components/Contact'
+import Homebanner from '../components/Banner'
+import Contact from '../components/Contact'
 
 
 export default function Home() {
