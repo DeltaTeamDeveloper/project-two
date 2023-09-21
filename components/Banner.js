@@ -67,11 +67,11 @@ const Banner = (props) => {
                     <Container>
                         <Row>
                             <Col md={12} className={styles[props.alignclass]}>
-                                <div className="content-box">
+                                <div className="content-box homeBox">
                                     <div className="content">
                                         <div className="inner">
                                             <Row>
-                                                <Col md={8}>
+                                                <Col lg={8}>
                                                     <div className="sub-title">Welcome To Amazon Book Submission</div>
                                                     <h1 className="header-heading">Can't Wait For Your Manuscript<br />To Get Published?</h1>
                                                     <span className='span-text'>We have the competence, experience and passion necessary to publish any book and help you reach your publishing goals with your e-books, textbooks or public-domain books.</span>
@@ -82,7 +82,7 @@ const Banner = (props) => {
                                                         </Link>
                                                     </div>
                                                 </Col>
-                                                <Col md={4} className='px-lg-0'>
+                                                <Col lg={4} className='px-lg-0 mt-4 mt-lg-0'>
                                                     <div className="form-box">
                                                         <h2>Let's Get Started</h2>
                                                         <div className="default-form">

@@ -1,11 +1,8 @@
 .banner {
+  position: relative;
   display: flex;
   align-items: center;
   text-align: left;
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
   overflow: hidden;
 }
 
@@ -26,4 +23,27 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+@media screen and (max-width: 1600px) {
+  .banner {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .banner {
+    height: auto;
+  }
+
+  .homeBanner {
+    background-position: 30% 20%;
+    background-size: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeBanner {
+    background-position: 60% 20%;
+  }
 }

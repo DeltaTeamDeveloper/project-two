@@ -65,7 +65,7 @@ const Footer = () => {
                                     <div className="widget-content">
                                         <h6>Explore</h6>
                                         <div className="row clearfix">
-                                            <div className="col-md-8 col-sm-12">
+                                            <div className="col-lg-8 col-md-6 col-sm-12">
                                                 <ul>
                                                     <li>
                                                         <Link href="book-writing-service">Book Writing & Publishing</Link>
@@ -93,7 +93,7 @@ const Footer = () => {
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div className="col-md-4 col-sm-12">
+                                            <div className="col-lg-4 col-md-6 col-sm-12">
                                                 <ul>
                                                     <li>
                                                         <Link href="/about-us">About Us</Link>
