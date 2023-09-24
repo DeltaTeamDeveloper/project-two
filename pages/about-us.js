@@ -1,12 +1,11 @@
 import Head from 'next/head'
 // import components
 import Homebanner from '../components/Banner'
+import Contact from '../components/Contact'
 import Why from '@/components/Why'
 import Agency from '@/components/Agency'
-import Portfolio from '@/components/Portfolio'
 import Unique from '@/components/Unique'
 import Next from '@/components/Next'
-import Contact from '../components/Contact'
 
 
 export default function Home() {
@@ -51,8 +50,6 @@ export default function Home() {
           <Why />
 
           <Agency />
-
-          <Portfolio />
 
           <Unique />
 

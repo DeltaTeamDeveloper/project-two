@@ -1,13 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
 import Router from 'next/router'
-import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
-import Modal from 'react-bootstrap/Modal'
 import styles from '@/styles/Banner.module.css'
+import Modal from 'react-bootstrap/Modal'
 
 
-const Banner = (props) => {
+const PrivacyBanner = (props) => {
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -24,9 +23,7 @@ const Banner = (props) => {
             first: event.target.first.value,
             email: event.target.email.value,
             phone: event.target.phone.value,
-
         }
-
 
 
         const JSONdata = JSON.stringify(data)
@@ -57,31 +54,22 @@ const Banner = (props) => {
 
     return (
         <>
-            <div className={`${styles[props.bannershome]} bannergllobal`}>
-                <div className={`${styles.homeBanner} image-layer`}></div>
-                <div className="left-top-line"></div>
-                <div className="right-bottom-curve"></div>
-                <div className="right-top-curve"></div>
+            <section className="page-banner privacy">
+                <div className="image-layer"></div>
+                <div className="shape-1"></div>
+                <div className="shape-2"></div>
                 <div className='content-box'>
                     <Container>
                         <Row>
                             <Col md={12} className={styles[props.alignclass]}>
                                 <div className="content-box homeBox">
                                     <div className="content">
-                                        <div className="inner">
-                                            <Row>
+                                        <div>
+                                            <Row className='align-items-center px-md-5'>
                                                 <Col lg={8}>
-                                                    <div className="sub-title">Welcome To Amazon Book Submission</div>
-                                                    <h1 className="header-heading">Can't Wait For Your Manuscript<br />To Get Published?</h1>
-                                                    <span className='span-text'>We have the competence, experience and passion necessary to publish any book and help you reach your publishing goals with your e-books, textbooks or public-domain books.</span>
-                                                    <div className="link-box">
-                                                        <Link className="theme-btn btn-style-one" href="/about-us">
-                                                            <i className="btn-curve"></i>
-                                                            <span className="btn-title">Discover More</span>
-                                                        </Link>
-                                                    </div>
+                                                    <h1 className="header-heading">PRIVACY POLICY</h1>
                                                 </Col>
-                                                <Col lg={4} className='px-lg-0 mt-4 mt-lg-0'>
+                                                <Col lg={4} className='px-lg-3 mt-4 mt-lg-0'>
                                                     <div className="form-box">
                                                         <h2>Let's Get Started</h2>
                                                         <div className="default-form">
@@ -126,28 +114,9 @@ const Banner = (props) => {
                         </Row>
                     </Container>
                 </div>
-
-
-                <Modal className='modopp'
-                    show={show}
-                    onHide={handleClose}
-                    size="lg"
-                    centered
-                    animation={false}
-
-                >
-                    <span onClick={handleClose} className={styles.crossclose}>x</span>
-                    <Modal.Body className='modalprocess'>
-                        <video controls className={`${styles.bgVideo1}`} autoPlay muted loop src="/images/process-combine.mp4" type="video/mp4"></video>
-                    </Modal.Body>
-
-                </Modal>
-
-
-
-            </div>
+            </section>
         </>
     )
 }
 
-export default Banner
+export default PrivacyBanner

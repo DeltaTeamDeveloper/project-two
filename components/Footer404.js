@@ -7,41 +7,10 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import logo from '../public/logo.png'
 
 
-const Footer = () => {
+const Footer404 = () => {
     return (
         <>
-            <section className="call-to-section">
-                <div className="auto-container">
-                    <div className="inner clearfix">
-                        <div className="shape-1 wow slideInRight" data-wow-delay="0ms"
-                            data-wow-duration="1500ms"></div>
-                        <div className="shape-2 wow fadeInDown" data-wow-delay="0ms"
-                            data-wow-duration="1500ms"></div>
-                        <Row>
-                            <Col md={6}>
-                                <div className="cust_le">
-                                    <h2>REQUEST A FREE QUOTE!</h2>
-                                    <span className='span-text'>We can help you with all your book related needs, whether
-                                        it be editing your manuscript, designing your cover or
-                                        formatting and publishing your book through and more!</span>
-                                </div>
-                            </Col>
-                            <Col md={6}>
-                                <div className="cust_ri">
-                                    <div className="link-box">
-                                        <Link className="theme-btn btn-style-two" href="contact-us">
-                                            <i className="btn-curve"></i>
-                                            <span className="btn-title">Contact with us</span>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </Col>
-                        </Row>
-                    </div>
-                </div>
-            </section>
-
-            <footer className="main-footer">
+            <footer className="main-footer foot404">
                 <div className="auto-container">
                     <div className="widgets-section">
                         <Row className="clearfix">
@@ -164,4 +133,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer404

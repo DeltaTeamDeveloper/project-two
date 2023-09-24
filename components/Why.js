@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 //
 import ico1 from '../public/images/icons/ico1.png'
 import ico2 from '../public/images/icons/ico2.png'
@@ -38,7 +39,7 @@ const Why = () => {
                                 <div className="icon-box">
                                     <Image src={ico1} alt="amazon" className="img-fluid" />
                                 </div>
-                                <h6><a href="book-writing-service.html">BOOK WRITING & PUBLISHING SERVICE</a></h6>
+                                <h6><Link href="/book-writing-service">BOOK WRITING & PUBLISHING SERVICE</Link></h6>
                             </div>
                         </div>
                         <div className="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
@@ -48,7 +49,7 @@ const Why = () => {
                                 <div className="icon-box">
                                     <Image src={ico2} alt="amazon" className="img-fluid" />
                                 </div>
-                                <h6><a href="book-marketing-service.html">BOOK MARKETING SERVICE</a></h6>
+                                <h6><Link href="/book-marketing-service">BOOK MARKETING SERVICE</Link></h6>
                             </div>
                         </div>
                         <div className="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
@@ -58,7 +59,7 @@ const Why = () => {
                                 <div className="icon-box">
                                     <Image src={ico3} alt="amazon" className="img-fluid" />
                                 </div>
-                                <h6><a href="amazon-publishing-service.html">AMAZON PUBLISHING SERVICE</a></h6>
+                                <h6><Link href="/amazon-publishing-service">AMAZON PUBLISHING SERVICE</Link></h6>
                             </div>
                         </div>
                         <div className="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
@@ -68,7 +69,7 @@ const Why = () => {
                                 <div className="icon-box">
                                     <Image src={ico4} alt="amazon" className="img-fluid" />
                                 </div>
-                                <h6><a href="book-editing-proofreading-service.html">BOOK EDITING & PROOFREADING SERVICE</a>
+                                <h6><Link href="/book-editing-proofreading-service">BOOK EDITING & PROOFREADING SERVICE</Link>
                                 </h6>
                             </div>
                         </div>
@@ -79,7 +80,7 @@ const Why = () => {
                                 <div className="icon-box">
                                     <Image src={ico5} alt="amazon" className="img-fluid" />
                                 </div>
-                                <h6><a href="book-cover-designing.html">BOOK COVER DESIGN SERVICE</a></h6>
+                                <h6><Link href="/book-cover-designing">BOOK COVER DESIGN SERVICE</Link></h6>
                             </div>
                         </div>
                         <div className="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
@@ -89,7 +90,7 @@ const Why = () => {
                                 <div className="icon-box">
                                     <Image src={ico6} alt="amazon" className="img-fluid" />
                                 </div>
-                                <h6><a href="book-illustrations-designing.html">BOOK ILLUSTRATIONS SERVICE</a></h6>
+                                <h6><Link href="/book-illustrations-designing">BOOK ILLUSTRATIONS SERVICE</Link></h6>
                             </div>
                         </div>
                         <div className="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
@@ -99,7 +100,7 @@ const Why = () => {
                                 <div className="icon-box">
                                     <Image src={ico7} alt="amazon" className="img-fluid" />
                                 </div>
-                                <h6><a href="book-publishing-service.html">BOOK PUBLISHING SERVICE</a></h6>
+                                <h6><Link href="/book-publishing-service">BOOK PUBLISHING SERVICE</Link></h6>
                             </div>
                         </div>
                         <div className="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
@@ -109,7 +110,7 @@ const Why = () => {
                                 <div className="icon-box">
                                     <Image src={ico8} alt="amazon" className="img-fluid" />
                                 </div>
-                                <h6><a href="ghost-writing-service.html">GHOST BOOK WRITING SERVICE</a></h6>
+                                <h6><Link href="/ghost-writing-service">GHOST BOOK WRITING SERVICE</Link></h6>
                             </div>
                         </div>
                         <div className="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
@@ -119,7 +120,7 @@ const Why = () => {
                                 <div className="icon-box">
                                     <Image src={ico9} alt="amazon" className="img-fluid" />
                                 </div>
-                                <h6><a href="book-printing-service.html">BOOK PRINTING SERVICE</a></h6>
+                                <h6><Link href="/book-printing-service">BOOK PRINTING SERVICE</Link></h6>
                             </div>
                         </div>
                         <div className="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
@@ -129,7 +130,7 @@ const Why = () => {
                                 <div className="icon-box">
                                     <Image src={ico10} alt="amazon" className="img-fluid" />
                                 </div>
-                                <h6><a href="author-website-development.html">AUTHOR WEBSITE DEVELOPMENT SERVICE</a></h6>
+                                <h6><Link href="/author-website-development">AUTHOR WEBSITE DEVELOPMENT SERVICE</Link></h6>
                             </div>
                         </div>
                     </div>

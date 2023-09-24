@@ -1,8 +1,6 @@
 import Head from 'next/head'
 // import components
 import Homebanner from '../components/Banner'
-import Why from '@/components/Why'
-import Agency from '@/components/Agency'
 import Portfolio from '@/components/Portfolio'
 import Unique from '@/components/Unique'
 import Next from '@/components/Next'
@@ -47,10 +45,6 @@ export default function Home() {
           <Homebanner
             bannershome='banner'
           />
-
-          <Why />
-
-          <Agency />
 
           <Portfolio />
 

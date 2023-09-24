@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 //
 import img1 from '../public/images/resource/featured-image-1.png'
 import img2 from '../public/images/resource/featured-image-2.png'
@@ -54,10 +55,10 @@ const Agency = () => {
                                     <div className="since"><span className="txt">Since <br />2008</span></div>
                                 </div>
                                 <div className="link-box">
-                                    <a className="theme-btn btn-style-one" href="/about-us">
+                                    <Link className="theme-btn btn-style-one" href="/about-us">
                                         <i className="btn-curve"></i>
                                         <span className="btn-title">Discover More</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

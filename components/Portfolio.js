@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 //
 import folio1 from '../public/images/gallery/01.png'
 import folio2 from '../public/images/gallery/02.png'
@@ -194,7 +195,7 @@ const Portfolio = () => {
                                                 alt="img"
                                             />
                                         </figure>
-                                        <a href={item.imgSrc} className="lightbox-image overlay-box" data-fancybox="gallery"></a>
+                                        <Link href={item.imgSrc} className="lightbox-image overlay-box" data-fancybox="gallery"></Link>
                                         <div className="cap-box">
                                             <div className="cap-inner">
                                                 <div className="cat"><span>{item.author}</span></div>
