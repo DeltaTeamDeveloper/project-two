@@ -5,7 +5,7 @@ import Image from 'next/image';
 //
 import logo from '../public/logo.png'
 import close from '../public/images/icons/close-1-1.png'
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaAngleRight, FaAngleDown } from 'react-icons/fa';
 
 
 const Header = () => {
@@ -142,11 +142,7 @@ const Header = () => {
                                             <Link href="/">Home</Link>
                                         </li>
                                         <li className="dropdown">
-                                            <Link href="#">Services
-                                                <div className="dropdown-btn">
-                                                    <span className="fa fa-angle-right"></span>
-                                                </div>
-                                            </Link>
+                                            <Link href="#">Services</Link>
                                             <ul>
                                                 <li>
                                                     <Link href="/book-writing-service">Book Writing &amp; Publishing</Link>
@@ -228,7 +224,6 @@ const Header = () => {
                         </Link>
                     </div>
 
-
                     <nav className="mobile-nav__container">
                         <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul className="navigation clearfix">
@@ -236,12 +231,12 @@ const Header = () => {
                                     <Link href="/">Home</Link>
                                 </li>
                                 <li className="dropdown">
-                                    <Link href="#">Services
+                                    <Link href="#" onClick={handleMegaMenu1}>Services
                                         <div className="dropdown-btn">
-                                            <span className="fa fa-angle-right"></span>
+                                            <FaAngleRight />
                                         </div>
                                     </Link>
-                                    <ul>
+                                    <ul className={megamenu1 ? "megaMenu openMenu" : "megaMenu"}>
                                         <li onClick={handleMenu}>
                                             <Link href="/book-writing-service">Book Writing &amp; Publishing</Link>
                                         </li>

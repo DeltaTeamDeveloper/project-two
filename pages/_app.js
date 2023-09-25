@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   const newfooter =
-    router.pathname == '/404';
+    router.pathname == '/404' || router.pathname == '/thank-you'
 
   return (
     <>

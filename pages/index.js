@@ -25,12 +25,12 @@ export default function Home() {
         <title>Amazon Book Submission: Professional Book Publishing Services for Amazon</title>
         <meta name="description" content="Amazon Book Submission is the best book publishing & marketing service to start, grow and succeed in the book publishing industry. Get your books published today." />
         <meta name="keywords" content="Amazon Book Submission, publish book on Amazon" />
-        <link rel="canonical" href="https://texasbookpublishing.com/" />
+        <link rel="canonical" href="" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Amazon Book Submission: Professional Book Publishing Services for Amazon" />
         <meta property="og:description" content="Amazon Book Submission is the best book publishing & marketing service to start, grow and succeed in the book publishing industry. Get your books published today." />
-        <meta property="og:url" content="https://texasbookpublishing.com/" />
+        <link rel="canonical" href="" />
         <meta property="og:site_name" content="Book Writing" />
         <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
         <meta name="twitter:card" content="summary_large_image" />

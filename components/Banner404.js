@@ -7,7 +7,7 @@ import styles from '@/styles/Banner.module.css'
 const Banner404 = (props) => {
     return (
         <>
-            <section className="page-banner privacy">
+            <section className="page-banner privacy ban404">
                 <div className="image-layer"></div>
                 <div className="shape-1"></div>
                 <div className="shape-2"></div>
@@ -20,7 +20,8 @@ const Banner404 = (props) => {
                                         <div>
                                             <Row className='px-md-5'>
                                                 <Col lg={12}>
-                                                    <h1 className="header-heading text-center">404</h1>
+                                                    <h1 className="font404 header-heading text-center">{props.title}</h1>
+                                                    <p className='text-center'>{props.text}</p>
                                                     <div className="link-box text-center pt-3">
                                                         <Link className="theme-btn btn-style-one" href="/">
                                                             <i className="btn-curve"></i>

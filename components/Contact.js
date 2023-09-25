@@ -13,19 +13,18 @@ const Contact = () => {
 
 
         const data = {
-            first: event.target.first.value,
-            email: event.target.email.value,
-            phone: event.target.phone.value,
-
+            name: e.target.first.value,
+            email: e.target.email.value,
+            phone: e.target.phone.value,
+            message: e.target.message.value,
         }
-
-
 
         const JSONdata = JSON.stringify(data)
 
         setScore('Wating For Send Data');
 
-        fetch('/api/email', {
+
+        fetch('api/email/route', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',
@@ -33,9 +32,9 @@ const Contact = () => {
             },
             body: JSONdata
         }).then((res) => {
-
+            console.log('Response received')
             if (res.status === 200) {
-                console.log(res);
+                console.log('Response succeeded!')
             }
         })
 
@@ -61,22 +60,22 @@ const Contact = () => {
                                 <div className="row clearfix">
                                     <div className="form-group col-lg-12 col-md-6 col-sm-12">
                                         <div className="field-inner">
-                                            <input type="text" required name="cn" placeholder="Your Name" />
+                                            <input type="text" required name="name" placeholder="Your Name" />
                                         </div>
                                     </div>
                                     <div className="form-group col-lg-6 col-md-6 col-sm-12">
                                         <div className="field-inner">
-                                            <input type="email" required name="em" placeholder="Email Address" />
+                                            <input type="email" required name="email" placeholder="Email Address" />
                                         </div>
                                     </div>
                                     <div className="form-group col-lg-6 col-md-6 col-sm-12">
                                         <div className="field-inner">
-                                            <input type="tel" maxLength={15} minLength={11} required name="pn" placeholder="Phone Number" />
+                                            <input type="tel" maxLength={15} minLength={11} required name="phone" placeholder="Phone Number" />
                                         </div>
                                     </div>
                                     <div className="form-group col-lg-12 col-md-12 col-sm-12">
                                         <div className="field-inner">
-                                            <textarea required name="msg" placeholder="Write Message"></textarea>
+                                            <textarea required name="message" placeholder="Write Message"></textarea>
                                         </div>
                                     </div>
                                     <div className="form-group col-lg-12 col-md-12 col-sm-12">

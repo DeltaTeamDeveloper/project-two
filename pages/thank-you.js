@@ -1,7 +1,6 @@
 import Head from 'next/head'
 // import components
-import Homebanner from '../components/Banner'
-import Contact from '../components/Contact'
+import Banner404 from '@/components/Banner404'
 
 
 export default function Home() {
@@ -17,14 +16,13 @@ export default function Home() {
                 <link rel="profile" href="http://gmpg.org/xfn/11" />
                 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
                 <meta name="ahrefs-site-verification" content="477dd6bba6df5cbe29b3e72784e78d88841329f22877beb016f1dde2e4967124" />
-                <title>Contact Us at Your Convenience | Amazon Book Submission</title>
-                <meta name="description" content="Amazon Book Submission is a leading full-service Book Publishing Agency with a diverse range of publishing and marketing expertise, including award-winning writers, professional editors, and graphic designers." />
-                <meta name="keywords" content="contact us, Amazon Book Submission" />
+                <title>THANK YOU</title>
+                <meta name="description" content="" />
                 <link rel="canonical" href="" />
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Contact Us at Your Convenience | Amazon Book Submission" />
-                <meta property="og:description" content="Amazon Book Submission is a leading full-service Book Publishing Agency with a diverse range of publishing and marketing expertise, including award-winning writers, professional editors, and graphic designers." />
+                <meta property="og:title" content="THANK YOU" />
+                <meta property="og:description" content="" />
                 <link rel="canonical" href="" />
                 <meta property="og:site_name" content="Book Writing" />
                 <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
@@ -39,11 +37,9 @@ export default function Home() {
 
                 <div className='page-wrapper'>
 
-                    <Homebanner
-                        bannershome='banner'
+                    <Banner404
+                        title={<> Thank You </>}
                     />
-
-                    <Contact />
 
                 </div>
 

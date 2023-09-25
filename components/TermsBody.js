@@ -121,41 +121,45 @@ const TermsBody = () => {
                                             <h4>All Services</h4>
                                         </div>
                                         <div className="menu-service-menu-container">
-                                            <ul id="menu-service-menu" className="list-unstyled m-0">
+                                        <ul id="menu-service-menu" className="list-unstyled m-0">
                                                 <li id="menu-item-526" className="menu-item menu-item-type-post_type menu-item-object-service menu-item-526">
-                                                    <Link href="#">E-BOOK WRITING & PUBLISHING</Link>
+                                                    <Link href="/book-writing-service">E-BOOK WRITING & PUBLISHING</Link>
                                                     <FaAngleRight />
                                                 </li>
                                                 <li id="menu-item-527" className="menu-item menu-item-type-post_type menu-item-object-service menu-item-527">
-                                                    <Link href="#">BOOK EDITING & PROOFREADING</Link>
+                                                    <Link href="/book-editing-proofreading-service">BOOK EDITING & PROOFREADING</Link>
                                                     <FaAngleRight />
                                                 </li>
                                                 <li id="menu-item-528" className="menu-item menu-item-type-post_type menu-item-object-service menu-item-528">
-                                                    <Link href="#">BOOK COVER DESIGN</Link>
+                                                    <Link href="/audio-book-service">AUDIO BOOK SERVICE</Link>
+                                                    <FaAngleRight />
+                                                </li>
+                                                <li id="menu-item-528" className="menu-item menu-item-type-post_type menu-item-object-service menu-item-528">
+                                                    <Link href="/book-cover-designing">BOOK COVER DESIGN</Link>
                                                     <FaAngleRight />
                                                 </li>
                                                 <li id="menu-item-529" className="menu-item menu-item-type-post_type menu-item-object-service current-menu-item menu-item-529">
-                                                    <Link href="#" aria-current="page">BOOK ILLUSTRATIONS</Link>
+                                                    <Link href="/book-illustrations-designing" aria-current="page">BOOK ILLUSTRATIONS</Link>
                                                     <FaAngleRight />
                                                 </li>
                                                 <li id="menu-item-530" className="menu-item menu-item-type-post_type menu-item-object-service menu-item-530">
-                                                    <Link href="#">BOOK PUBLISHING</Link>
+                                                    <Link href="/book-publishing-service">BOOK PUBLISHING</Link>
                                                     <FaAngleRight />
                                                 </li>
                                                 <li id="menu-item-531" className="menu-item menu-item-type-post_type menu-item-object-service menu-item-531">
-                                                    <Link href="#">BOOK PRINTING</Link>
+                                                    <Link href="/book-printing-service">BOOK PRINTING</Link>
                                                     <FaAngleRight />
                                                 </li>
                                                 <li id="menu-item-532" className="menu-item menu-item-type-post_type menu-item-object-service menu-item-532">
-                                                    <Link href="#">BOOK MARKETING</Link>
+                                                    <Link href="/book-marketing-service">BOOK MARKETING</Link>
                                                     <FaAngleRight />
                                                 </li>
                                                 <li id="menu-item-533" className="menu-item menu-item-type-post_type menu-item-object-service menu-item-533">
-                                                    <Link href="#">AUTHOR WEBSITE</Link>
+                                                    <Link href="/author-website-development">AUTHOR WEBSITE</Link>
                                                     <FaAngleRight />
                                                 </li>
                                                 <li id="menu-item-534" className="menu-item menu-item-type-post_type menu-item-object-service menu-item-534">
-                                                    <Link href="#">AMAZON-PUBLISHING</Link>
+                                                    <Link href="/amazon-publishing-service">AMAZON-PUBLISHING</Link>
                                                     <FaAngleRight />
                                                 </li>
                                             </ul>

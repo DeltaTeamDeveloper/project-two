@@ -3,14 +3,9 @@ import { useState } from 'react';
 import Router from 'next/router'
 import { Container, Row, Col } from 'react-bootstrap'
 import styles from '@/styles/Banner.module.css'
-import Modal from 'react-bootstrap/Modal'
 
 
 const TermsBanner = (props) => {
-
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     const [score, setScore] = useState('Send message');
 
@@ -20,19 +15,18 @@ const TermsBanner = (props) => {
 
 
         const data = {
-            first: event.target.first.value,
-            email: event.target.email.value,
-            phone: event.target.phone.value,
-
+            name: e.target.first.value,
+            email: e.target.email.value,
+            phone: e.target.phone.value,
+            message: e.target.message.value,
         }
-
-
 
         const JSONdata = JSON.stringify(data)
 
         setScore('Wating For Send Data');
 
-        fetch('/api/email', {
+
+        fetch('api/submit/route', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',
@@ -40,9 +34,9 @@ const TermsBanner = (props) => {
             },
             body: JSONdata
         }).then((res) => {
-
+            console.log('Response received')
             if (res.status === 200) {
-                console.log(res);
+                console.log('Response succeeded!')
             }
         })
 
@@ -67,7 +61,7 @@ const TermsBanner = (props) => {
                                 <div className="content-box homeBox">
                                     <div className="content">
                                         <div>
-                                            <Row className='align-items-center px-md-5'>
+                                            <Row className='align-items-center px-lg-5'>
                                                 <Col lg={8}>
                                                     <h1 className="header-heading">TERMS & CONDITIONS</h1>
                                                 </Col>
@@ -79,22 +73,22 @@ const TermsBanner = (props) => {
                                                                 <div className="row clearfix">
                                                                     <div className="form-group col-lg-12 col-md-12 col-sm-12">
                                                                         <div className="field-inner">
-                                                                            <input type="text" required name="cn" placeholder="Your Name" />
+                                                                            <input type="text" required name="name" placeholder="Your Name" />
                                                                         </div>
                                                                     </div>
                                                                     <div className="form-group col-lg-6 col-md-6 col-sm-12">
                                                                         <div className="field-inner">
-                                                                            <input type="email" required name="em" placeholder="Email Address" />
+                                                                            <input type="email" required name="email" placeholder="Email Address" />
                                                                         </div>
                                                                     </div>
                                                                     <div className="form-group col-lg-6 col-md-6 col-sm-12">
                                                                         <div className="field-inner">
-                                                                            <input type="tel" maxLength={15} minLength={11} required name="pn" placeholder="Phone Number" />
+                                                                            <input type="tel" maxLength={15} minLength={11} required name="phone" placeholder="Phone Number" />
                                                                         </div>
                                                                     </div>
                                                                     <div className="form-group col-lg-12 col-md-12 col-sm-12">
                                                                         <div className="field-inner">
-                                                                            <textarea required name="msg" placeholder="I am looking for ...." ></textarea>
+                                                                            <textarea required name="message" placeholder="I am looking for ...." ></textarea>
                                                                         </div>
                                                                     </div>
                                                                     <div className="form-group col-lg-12 col-md-12 col-sm-12">

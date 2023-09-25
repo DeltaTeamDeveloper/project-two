@@ -20,15 +20,15 @@ export default function Home() {
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <meta name="ahrefs-site-verification" content="477dd6bba6df5cbe29b3e72784e78d88841329f22877beb016f1dde2e4967124" />
-        <title>Amazon Book Submission: Professional Book Publishing Services for Amazon</title>
-        <meta name="description" content="Amazon Book Submission is the best book publishing & marketing service to start, grow and succeed in the book publishing industry. Get your books published today." />
-        <meta name="keywords" content="Amazon Book Submission, publish book on Amazon" />
-        <link rel="canonical" href="https://texasbookpublishing.com/" />
+        <title>Our Portfolio | Amazon Book Submission</title>
+        <meta name="description" content="We're a publishing agency with over 10 years of combined experience in the books and publishing industry." />
+        <meta name="keywords" content="our portfolio, Amazon Book Submission" />
+        <link rel="canonical" href="" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Amazon Book Submission: Professional Book Publishing Services for Amazon" />
-        <meta property="og:description" content="Amazon Book Submission is the best book publishing & marketing service to start, grow and succeed in the book publishing industry. Get your books published today." />
-        <meta property="og:url" content="https://texasbookpublishing.com/" />
+        <meta property="og:title" content="Our Portfolio | Amazon Book Submission" />
+        <meta property="og:description" content="We're a publishing agency with over 10 years of combined experience in the books and publishing industry." />
+        <link rel="canonical" href="" />
         <meta property="og:site_name" content="Book Writing" />
         <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
         <meta name="twitter:card" content="summary_large_image" />

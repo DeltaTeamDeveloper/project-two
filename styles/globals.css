@@ -25799,7 +25799,12 @@ p.amazon-footer-disclaimer {
   line-height: 75px;
 }
 
-.foot404{
+.ban404 h1 {
+  font-size: 200px;
+  line-height: 150px;
+}
+
+.foot404 {
   border-top: 1px solid #fff;
 }
 
@@ -25817,17 +25822,40 @@ p.amazon-footer-disclaimer {
   font-size: 16px;
 }
 
-.services h1{
+.services h1 {
   font-size: 40px;
   line-height: 34px;
 }
 
-.services h1 span{
+.services h1 span {
   font-size: 24px;
 }
 
-.services p{
+.services p {
   font-family: var(--thm-b-font);
+}
+
+.services2 h1 {
+  font-size: 100px;
+}
+
+.services2 h3 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.services2 p {
+  font-family: var(--thm-b-font);
+}
+
+.services2 .content-box {
+  padding-top: 45px;
+  height: 800px;
+}
+
+.services2 .content-box .content {
+  padding: 0;
 }
 
 @media screen and (max-width: 991px) {
@@ -25867,8 +25895,43 @@ p.amazon-footer-disclaimer {
     margin-top: 8px;
   }
 
-  .services h1{
+  .services h1 {
     line-height: 1.05em;
+  }
+
+  .services2 h1 {
+    font-size: 70px;
+  }
+
+  .services2 p br {
+    display: none;
+  }
+
+  .services2 .content-box {
+    padding: 100px 0 50px;
+    height: auto;
+  }
+
+  .ban404 h1 {
+    font-size: 180px;
+    line-height: 140px;
+  }
+
+  /* =========================== */
+
+  .mobile-nav__container li.dropdown .megaMenu {
+    display: none;
+    padding: 15px 0 5px 20px !important;
+    margin-top: 15px;
+    margin-bottom: 20px !important;
+    border-bottom: 1px solid #ababab;
+    border-top: 1px solid #ababab;
+    transition: all .10s ease-in-out;
+  }
+
+  .mobile-nav__container li.dropdown .megaMenu.openMenu{
+    display: block;
+    transition: all .10s ease-in-out;
   }
 }
 
@@ -25892,7 +25955,44 @@ p.amazon-footer-disclaimer {
   }
 
   .privacy h1 {
-    font-size: 90px;
+    font-size: 70px;
     text-align: left;
+  }
+
+  .services2 h1 {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .services2 h3 {
+    font-size: 60px;
+    text-align: left;
+  }
+
+  .services2 p {
+    text-align: left;
+  }
+
+  .services2 .content-box {
+    padding: 80px 0 30px;
+    height: auto;
+  }
+
+  .ban404 h1 {
+    font-size: 80px;
+    line-height: 60px;
+  }
+
+  .ban404 p {
+    padding: 0 20px;
+  }
+
+  .ban404 .content-box {
+    height: 100vh;
+    /* padding: 40px 0 30px; */
+  }
+
+  .main-footer .widgets-section {
+    padding: 50px 0px 10px;
   }
 }

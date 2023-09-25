@@ -1,12 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
 import Router from 'next/router'
-import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
 import styles from '@/styles/Banner.module.css'
 
 
-const Banner = (props) => {
+const ServiceBanner2 = (props) => {
 
     const [score, setScore] = useState('Send message');
 
@@ -46,36 +45,30 @@ const Banner = (props) => {
         if (pathname == pathname) {
             Router.push('/thank-you')
         }
-
     }
 
     return (
         <>
-            <div className={`${styles[props.bannershome]} bannergllobal`}>
-                <div className={`${styles.homeBanner} image-layer`}></div>
-                <div className="left-top-line"></div>
-                <div className="right-bottom-curve"></div>
-                <div className="right-top-curve"></div>
+            <section className="page-banner services2">
+                <div className="image-layer"></div>
+                <div className="shape-1"></div>
+                <div className="shape-2"></div>
                 <div className='content-box'>
                     <Container>
                         <Row>
                             <Col md={12} className={styles[props.alignclass]}>
                                 <div className="content-box homeBox">
                                     <div className="content">
-                                        <div className="inner">
-                                            <Row>
+                                        <div>
+                                            <Row className='align-items-center px-lg-5 mx-lg-1'>
                                                 <Col lg={8}>
-                                                    <div className="sub-title">Welcome To Amazon Book Submission</div>
-                                                    <h1 className="header-heading">Can't Wait For Your Manuscript<br />To Get Published?</h1>
-                                                    <span className='span-text'>We have the competence, experience and passion necessary to publish any book and help you reach your publishing goals with your e-books, textbooks or public-domain books.</span>
-                                                    <div className="link-box">
-                                                        <Link className="theme-btn btn-style-one" href="/about-us">
-                                                            <i className="btn-curve"></i>
-                                                            <span className="btn-title">Discover More</span>
-                                                        </Link>
+                                                    <div>
+                                                        <h1 className="text-left">{props.title}</h1>
+                                                        <h3>{props.subtitle}</h3>
+                                                        <p className="text-left">{props.text}</p>
                                                     </div>
                                                 </Col>
-                                                <Col lg={4} className='px-lg-0 mt-4 mt-lg-0'>
+                                                <Col lg={4} className='px-lg-3 mt-4 mt-lg-0'>
                                                     <div className="form-box">
                                                         <h2>Let's Get Started</h2>
                                                         <div className="default-form">
@@ -120,10 +113,9 @@ const Banner = (props) => {
                         </Row>
                     </Container>
                 </div>
-
-            </div>
+            </section>
         </>
     )
 }
 
-export default Banner
+export default ServiceBanner2
